@@ -10,6 +10,11 @@ const Profile = () => {
       "https://i.pinimg.com/originals/07/44/76/074476f844838fb2487a9d7b4d08a904.jpg",
       country:"india"
     })
+    const [styles, setStyles] = useState({
+        bgColor: "white",
+        textColor: "black",
+        text: "Check to Switch Dark Mode",
+      });
     const getuserData=()=>{
         fetch("https://randomuser.me/api/?results=1")
         .then((res)=>res.json())
@@ -24,8 +29,32 @@ const Profile = () => {
             })
         })
     }
+    const changeStyle = (event) => {
+        // alert(event.target.checked);
+        // alert(typeof event.target.checked);
+    
+        if (event.target.checked) {
+          //   setBgColor("black");
+          //   setTextColor("white");
+          setStyles({
+            bgColor: "black",
+            textColor: "white",
+            text: "Uncheck to Switch Light Mode",
+          });
+        } else {
+          //   setBgColor("white");
+          //   setTextColor("black");
+          setStyles({
+            bgColor: "white",
+            textColor: "black",
+            text: "Check to Switch Dark Mode",
+          });
+        }
+      };
   return (
-    <div className='card'>
+    <div className='card'
+    style={{ backgroundColor: styles.bgColor, color: styles.textColor }}
+    >
        <div style={{width:"35%"}}>
             <img src={state.image} width="100%" height="100%"  />
        </div>
@@ -53,6 +82,13 @@ const Profile = () => {
             
           </dl>
           <button onClick={getuserData}>Random User</button>
+          <br />
+        <input
+          type="checkbox"
+          onChange={changeStyle}
+          style={{ marginTop: "15px" }}
+        />
+        {styles.text}
        </div>
     </div>
   )
