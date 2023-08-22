@@ -8,7 +8,8 @@ import Nav from './components/Nav/Nav';
 import Profile from './components/Profile/Profile';
 import Inputto from './components/Parent-Child/Inputto';
 import Texx from './components/child-Parent/Texx';
-import Parent from './components/siblings/Parent';
+import Parent from './components/siblings/Parent'
+
 function App() {
   return (
     <div className="App">
@@ -21,9 +22,10 @@ function App() {
  <Profile/>
  <Inputto/>
  <Texx/>
-  */}
-  <parent/>
+ <parent/>
   <Parent/>
+  */}
+ 
  
  <Footer/>
     </div>
