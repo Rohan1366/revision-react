@@ -1,8 +1,18 @@
-import React from 'react'
+import { useState } from "react"
+import React  from 'react'
 
 const List = () => {
+  let [state, setState]=useState(["apple","mango","rohan","root","fruit"])
   return (
-    <div>List</div>
+    <div>
+      <ol>
+        {
+          state.map((ele)=>{
+           return <li>{ele}</li>
+          })
+        }
+      </ol>
+    </div>
   )
 }
 
