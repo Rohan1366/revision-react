@@ -33,23 +33,32 @@ const Profile = () => {
         // alert(event.target.checked);
         // alert(typeof event.target.checked);
     
-        if (event.target.checked) {
-          //   setBgColor("black");
-          //   setTextColor("white");
-          setStyles({
-            bgColor: "black",
-            textColor: "white",
-            text: "Uncheck to Switch Light Mode",
-          });
-        } else {
-          //   setBgColor("white");
-          //   setTextColor("black");
-          setStyles({
-            bgColor: "white",
-            textColor: "black",
-            text: "Check to Switch Dark Mode",
-          });
-        }
+        // if (event.target.checked) {
+        //   //   setBgColor("black");
+        //   //   setTextColor("white");
+        //   setStyles({
+        //     bgColor: "black",
+        //     textColor: "white",
+        //     text: "Uncheck to Switch Light Mode",
+        //   });
+        // } else {
+        //   //   setBgColor("white");
+        //   //   setTextColor("black");
+        //   setStyles({
+        //     bgColor: "white",
+        //     textColor: "black",
+        //     text: "Check to Switch Dark Mode",
+        //   });
+        // }
+        {event.target.checked ? setStyles({
+              bgColor: "black",
+              textColor: "white",
+              text: "Uncheck to Switch Light Mode",
+            }) : setStyles({
+                  bgColor: "white",
+                  textColor: "black",
+                  text: "Check to Switch Dark Mode",
+                }); }
       };
   return (
     <div className='card'

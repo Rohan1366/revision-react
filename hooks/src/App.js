@@ -6,6 +6,9 @@ import List from './components/List/List';
 import Todo from './components/Todo/Todo';
 import Nav from './components/Nav/Nav';
 import Profile from './components/Profile/Profile';
+import Inputto from './components/Parent-Child/Inputto';
+import Texx from './components/child-Parent/Texx';
+
 function App() {
   return (
     <div className="App">
@@ -14,8 +17,13 @@ function App() {
       <Counter/>
   <Footer/>*/}
   <Nav/>
- {/* <Todo/> */}
+ {/* <Todo/>
  <Profile/>
+ <Inputto/>
+  */}
+  <Texx/>
+  
+ 
  <Footer/>
     </div>
   );
