@@ -9,7 +9,7 @@ import Profile from './components/Profile/Profile';
 import Inputto from './components/Parent-Child/Inputto';
 import Texx from './components/child-Parent/Texx';
 import Parent from './components/siblings/Parent'
-
+import Use from './useEfect-hook/use';
 function App() {
   return (
     <div className="App">
@@ -25,6 +25,7 @@ function App() {
  <parent/>
   <Parent/>
   */}
+  <Use/>
  
  
  <Footer/>
