@@ -14,6 +14,7 @@ import { useState } from 'react';
 import Use2 from './useEfect-hook/Use2';
 import Timer from './useRef/Timer';
 import Dom from './useRef/Dom';
+import UnComtrolleForm from './useRef/Form/UnComtrolleForm';
 function App() {
   const [state, setState]=useState(true)
   return (
@@ -50,9 +51,10 @@ function App() {
         >
           Show Table
         </button>
-        </div> */}
+        </div>
          <Timer/>
-         <Dom/>
+         <Dom/> */}
+         <UnComtrolleForm/>
  <Footer/>
     </div>
   );
