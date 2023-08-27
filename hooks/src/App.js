@@ -10,7 +10,11 @@ import Inputto from './components/Parent-Child/Inputto';
 import Texx from './components/child-Parent/Texx';
 import Parent from './components/siblings/Parent'
 import Use from './useEfect-hook/Use';
+import { useState } from 'react';
+import Use2 from './useEfect-hook/Use2';
+import Timer from './useEfect-hook/Timer';
 function App() {
+  const [state, setState]=useState(true)
   return (
     <div className="App">
       {/*<h1>Hello</h1>
@@ -24,10 +28,29 @@ function App() {
  <Texx/>
  <parent/>
   <Parent/>
-  */}
   <Use/>
- 
- 
+  <Use2/>
+  */}
+  
+  {/*
+  {state ? <Use /> : <Use2 />}
+      <div style={{ textAlign: "center" }}>
+        <button
+          onClick={() => {
+            setState(true);
+          }}
+        >
+          Show Card
+        </button>
+        <button
+          onClick={() => {
+            setState(false);
+          }}
+        >
+          Show Table
+        </button>
+        </div> */}
+         <Timer/>
  <Footer/>
     </div>
   );
