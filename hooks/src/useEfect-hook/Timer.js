@@ -28,6 +28,7 @@ const Timer = () => {
   
     const handleStopButton = () => {
       setStartcounter(false);
+      setCounter(0)
     };
   return (
     <div style={{textAlign:"center"}} >
