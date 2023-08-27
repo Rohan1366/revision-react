@@ -1,0 +1,12 @@
+useEffect is a special function which help us to perform side effects whenever our component is in certain phase
+
+side effect -- They are just actions which are not related to react or which are not provided by react
+
+dependensi array -- if we dont want to update or when we want that whenecer our component is render then stop dont update but lets say 
+you want to call the function in certain condition then we can pass the state variable in it so whenever that state value will update 
+then it will call the function
+
+
+return --- we can use return whenever if we want to delete information before componete goes under unmount phase
+
+Phases --- mount unmount update

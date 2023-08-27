@@ -12,7 +12,8 @@ import Parent from './components/siblings/Parent'
 import Use from './useEfect-hook/Use';
 import { useState } from 'react';
 import Use2 from './useEfect-hook/Use2';
-import Timer from './useEfect-hook/Timer';
+import Timer from './useRef/Timer';
+import Dom from './useRef/Dom';
 function App() {
   const [state, setState]=useState(true)
   return (
@@ -51,6 +52,7 @@ function App() {
         </button>
         </div> */}
          <Timer/>
+         <Dom/>
  <Footer/>
     </div>
   );
