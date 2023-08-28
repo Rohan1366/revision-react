@@ -16,6 +16,7 @@ import Timer from './useRef/Timer';
 import Dom from './useRef/Dom';
 import UnComtrolleForm from './useRef/Form/UnComtrolleForm';
 import ControlleForm from './useRef/Form/ControlleForm';
+import A from './UseContext-hook/A';
 function App() {
   const [state, setState]=useState(true)
   return (
@@ -55,8 +56,9 @@ function App() {
         </div>
          <Timer/>
          <Dom/> 
-         <UnComtrolleForm/>*/}
-         <ControlleForm/>
+         <UnComtrolleForm/>
+         <ControlleForm/>*/}
+      <A/>
  <Footer/>
     </div>
   );

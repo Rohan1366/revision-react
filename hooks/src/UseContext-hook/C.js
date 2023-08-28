@@ -1,8 +1,11 @@
 import React from 'react'
-
-const C = () => {
+import D from './D'
+const C = (props) => {
   return (
-    <div>C</div>
+    <div>
+        <h1>C</h1>
+        <D info={props.data} />
+    </div>
   )
 }
 
