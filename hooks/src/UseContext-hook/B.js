@@ -4,7 +4,7 @@ const B = (props) => {
   return (
     <div>
       <h1>B</h1>
-      <C data={props.data}  />
+      <C   />
     </div>
   )
 }

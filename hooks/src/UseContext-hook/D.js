@@ -1,14 +1,16 @@
 import React from 'react'
-
+import { useContext } from 'react'
+import myContext from './Context'
 const D = (props) => {
+  const data= useContext(myContext)
   return (
     <div>
         <h1>
             D
         </h1>
-        <p>name :{props.info.name}</p>
-        <p>city :{props.info.city}</p>
-        <p>age :{props.info.age}</p>
+        <p>name :{data.name}</p>
+        <p>city :{data.city}</p>
+        <p>age :{data.age}</p>
     </div>
   )
 }

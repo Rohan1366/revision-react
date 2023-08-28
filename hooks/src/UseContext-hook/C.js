@@ -4,7 +4,7 @@ const C = (props) => {
   return (
     <div>
         <h1>C</h1>
-        <D info={props.data} />
+        <D  />
     </div>
   )
 }
