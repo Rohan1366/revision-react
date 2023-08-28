@@ -18,7 +18,9 @@ const A = (props) => {
             city:"Aundh",
             age:22
         })}>Change</button>
-        <B data={state}/>
+        <myContext.Provider>
+        <B />
+        </myContext.Provider>
     </div>
   )
 }
