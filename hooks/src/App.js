@@ -57,8 +57,9 @@ function App() {
          <Timer/>
          <Dom/> 
          <UnComtrolleForm/>
-         <ControlleForm/>*/}
-      <A/>
+         <ControlleForm/>
+         <A/>*/}
+      
  <Footer/>
     </div>
   );
