@@ -1,13 +1,14 @@
 import React from 'react'
 import './Nav.css'
+import { Link } from 'react-router-dom'
 const Nav = () => {
   return (
     <div className="nav">
-      <a href="/">Home</a>
-      <a href="/profile">Profile</a>
-      <a href="/todo">Todo</a>
-      <a href="/chat">Chat</a>
-      <a href="#">ContactUs</a>
+      <Link to="/">Home</Link>
+      <Link to="/profile">Profile</Link>
+      <Link to="/todo">Todo</Link>
+      <Link to="/chat">Chat</Link>
+      <Link to="#">ContactUs</Link>
     </div>
   )
 }
