@@ -19,6 +19,7 @@ import ControlleForm from './useRef/Form/ControlleForm';
 import A from './UseContext-hook/A';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Routing/Home/Home';
+import PagenotFound from './Routing/PagenotFound/PagenotFound';
 function App() {
   const [state, setState]=useState(true)
   return (
@@ -66,7 +67,7 @@ function App() {
             <Route path='/todo' element={<Todo/>}/>
             <Route path='/chat' element={<Parent/>}/>
             <Route path='/' element={<Home/>}/>
-            
+            <Route path='*' element={<PagenotFound/>}/>
          </Routes>
       
  <Footer/>
