@@ -3,10 +3,10 @@ import './Nav.css'
 const Nav = () => {
   return (
     <div className="nav">
-      <a href="#">Home</a>
-      <a href="#">Profile</a>
-      <a href="#">Users</a>
-      <a href="#">Products</a>
+      <a href="/">Home</a>
+      <a href="/profile">Profile</a>
+      <a href="/todo">Todo</a>
+      <a href="/chat">Chat</a>
       <a href="#">ContactUs</a>
     </div>
   )

@@ -6,7 +6,7 @@ const Parent = () => {
     const [state1, setState1]=useState()
     const [state2, setState2]=useState()
   return (
-    <div style={{display:"flex" , width:"80%" , textAlign:"center"}}>
+    <div style={{display:"flex" , width:"80%" , textAlign:"center",height:"400px",boxShadow:"0px 10px 10px  black",margin:"40px"}}>
         <div style={{width:"50%"}}>
             <First username1={setState1} username2={state2} />
         </div>
