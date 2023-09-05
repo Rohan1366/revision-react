@@ -3,7 +3,7 @@ import React from 'react'
 const Electronics = () => {
   return (
     <div>
-        <h1>electronics</h1>
+        <h1>electronic</h1>
     </div>
   )
 }

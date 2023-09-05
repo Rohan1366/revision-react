@@ -17,7 +17,7 @@ import Dom from './useRef/Dom';
 import UnComtrolleForm from './useRef/Form/UnComtrolleForm';
 import ControlleForm from './useRef/Form/ControlleForm';
 import A from './UseContext-hook/A';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './Routing/Home/Home';
 import PagenotFound from './Routing/PagenotFound/PagenotFound';
 import Products from './Routing/Products/Products';
