@@ -20,6 +20,9 @@ import A from './UseContext-hook/A';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Routing/Home/Home';
 import PagenotFound from './Routing/PagenotFound/PagenotFound';
+import Products from './Routing/Products/Products';
+import Jewelery from './Routing/Products/Jewelery';
+import Electronics from './Routing/Products/Electronics';
 function App() {
   const [state, setState]=useState(true)
   return (
@@ -68,6 +71,10 @@ function App() {
             <Route path='/chat' element={<Parent/>}/>
             <Route path='/' element={<Home/>}/>
             <Route path='*' element={<PagenotFound/>}/>
+            <Route path='/products' element={<Products/>}  >
+              <Route path='jewelery' element={<Jewelery/>} />
+              <Route path='electronics' element={<Electronics/>} />
+            </Route>
          </Routes>
       
  <Footer/>
