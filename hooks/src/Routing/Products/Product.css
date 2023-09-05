@@ -17,4 +17,5 @@
 }
 .productContainer > div:nth-child(2){
     width: 65%;
+    color: brown;
 }
