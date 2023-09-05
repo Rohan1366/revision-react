@@ -18,5 +18,7 @@
 .productContainer > div:nth-child(2){
     width: 65%;
     color: brown;
-    margin: 10px 10px;
+    margin: 20px 10px;
+    box-shadow: 0px 8px 10px black;
+
 }
