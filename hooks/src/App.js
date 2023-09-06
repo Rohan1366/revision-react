@@ -24,6 +24,7 @@ import Products from './Routing/Products/Products';
 import Jewelery from './Routing/Products/Jewelery';
 import Electronics from './Routing/Products/Electronics';
 import Category from './Routing/Products/Category';
+import Mens from './Routing/Products/Mens';
 function App(props) {
   const [state, setState]=useState(true)
   return (
@@ -73,9 +74,10 @@ function App(props) {
             <Route path='/' element={<Home/>}/>
             <Route path='*' element={<PagenotFound/>}/>
             <Route path='/products' element={<Products/>}  >
-            <Route path="" element={<Navigate to="electronics" />} />
+              <Route path="" element={<Navigate to="electronics" />} />
               <Route path='jewelery' element={<Jewelery/>} />
               <Route path='electronics' element={<Electronics/>} />
+              <Route path='mens clothing' element={<Mens/>} />
             </Route>
          </Routes>
       

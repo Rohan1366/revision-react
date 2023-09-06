@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Electronics = () => {
   const [state,setState]=useState([])
   useEffect(()=>{
-       fetch("https://fakestoreapi.com/products/category/jewelery")
+       fetch("https://fakestoreapi.com/products/category/electronics")
        .then((res)=>res.json())
        .then((data)=>{
          console.log(data)
