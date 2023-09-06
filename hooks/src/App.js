@@ -23,7 +23,8 @@ import PagenotFound from './Routing/PagenotFound/PagenotFound';
 import Products from './Routing/Products/Products';
 import Jewelery from './Routing/Products/Jewelery';
 import Electronics from './Routing/Products/Electronics';
-function App() {
+import Category from './Routing/Products/Category';
+function App(props) {
   const [state, setState]=useState(true)
   return (
     <div className="App">
