@@ -73,6 +73,7 @@ function App(props) {
             <Route path='/' element={<Home/>}/>
             <Route path='*' element={<PagenotFound/>}/>
             <Route path='/products' element={<Products/>}  >
+            <Route path="" element={<Navigate to="electronics" />} />
               <Route path='jewelery' element={<Jewelery/>} />
               <Route path='electronics' element={<Electronics/>} />
             </Route>
