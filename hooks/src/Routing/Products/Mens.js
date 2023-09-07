@@ -18,7 +18,7 @@ const Mens = () => {
             state.length > 0 ?  <ul>
             {
                 state.map((ele,index)=>{
-                  return <NavLink style={{color:"red"}}   ><li key={index} >{ele.title}</li></NavLink>
+                  return <NavLink style={{color:"red"}} to={`/productdetails/${ele.id}`}   ><li key={index} >{ele.title}</li></NavLink>
                 })
               }
             </ul> : <h2 style={{color:"black", textAlign:"center"}}>.... Loding ....</h2>
