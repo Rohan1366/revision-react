@@ -1,2 +1,3 @@
 Routing --> Routing means it is a technique to switching from one comp to onother comp based on browser path
 date ---> 21-12-2022
+useParames --> 
