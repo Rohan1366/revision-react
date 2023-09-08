@@ -1,3 +1,5 @@
 Routing --> Routing means it is a technique to switching from one comp to onother comp based on browser path
 date ---> 21-12-2022
-useParames --> 
+useParames --> useParames() is a hook from react-router-dom
+               using this hook we can access url path parameters
+               it is going to return a object
