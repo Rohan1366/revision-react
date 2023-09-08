@@ -25,6 +25,7 @@ import Jewelery from './Routing/Products/Jewelery';
 import Electronics from './Routing/Products/Electronics';
 import Category from './Routing/Products/Category';
 import Mens from './Routing/Products/Mens';
+import ProductDetails from './Routing/Products/ProductDetails';
 function App(props) {
   const [state, setState]=useState(true)
   return (
@@ -79,6 +80,7 @@ function App(props) {
               <Route path='electronics' element={<Electronics/>} />
               <Route path='mens clothing' element={<Mens/>} />
             </Route>
+            <Route path='/productDetails/:id' element={<ProductDetails/>}/>
          </Routes>
       
  <Footer/>
