@@ -5,14 +5,16 @@ const ProductDetails = () => {
    
    const [state,setState]=useState({})
    useEffect(()=>{
-       fetch("https://fakestoreapi.com/products/1")
+       fetch(`https://fakestoreapi.com/products/${pathParams.id}`)
        .then((res)=>res.json())
        .then((data)=>{
         setState(data)
        })
    },[])
   return (
-    <div>ProductDetails</div>
+    <div>
+        
+    </div>
   )
 }
 
