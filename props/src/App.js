@@ -15,7 +15,7 @@ function App(props) {
       <Card img="https://th.bing.com/th/id/OIP.7-PVtrGRSm80FAdJHjSRPgHaF7?pid=ImgDet&rs=1" name="Start" gender="Female"/>
       <Card img="https://th.bing.com/th/id/OIP.22EylDsZ2jCkidoAe6yxNAHaHa?pid=ImgDet&w=199&h=199&c=7&dpr=1.3" name="Zoya" gender="Female"/>
   */}
-    <h2> prop</h2>
+    <h2>prrop</h2>
  
       </div>
     </>
