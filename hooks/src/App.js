@@ -35,7 +35,7 @@ function App(props) {
       <Counter/>
   <Footer/>*/}
   <Nav/>
-    bhgfdfg
+    
  {/* <Todo/>
  <Profile/>
  <Inputto/>
